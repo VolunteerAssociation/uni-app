@@ -1,0 +1,83 @@
+{
+	"pages": [{
+			"path": "pages/home/home",
+			"style": {
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "首页",
+				"navigationBarBackgroundColor": "#008140"
+			}
+		},
+		{
+			"path": "pages/mine/mine",
+			"style": {
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "我的",
+				"navigationBarBackgroundColor": "#008140"
+			}
+		},
+		{
+			"path": "pages/order/order",
+			"style": {
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "订单",
+				"navigationBarBackgroundColor": "#008140"
+			}
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "登录",
+				"navigationBarBackgroundColor": "#00B389"
+			}
+		},
+		{
+			"path": "pages/register/register",
+			"style": {
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "注册",
+				"navigationBarBackgroundColor": "#00B389"
+			}
+		}, {
+			"path": "components/RightContent/RightContent",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"navigationStyle": "default"
+	},
+	"uniIdRouter": {},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#3cc51f",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/home/home",
+				"text": "首页",
+				"iconPath": "static/icon/home.png",
+				"selectedIconPath": "static/icon/home-chnn.png"
+			},
+			{
+				"pagePath": "pages/order/order",
+				"text": "订单",
+				"iconPath": "static/icon/order.png",
+				"selectedIconPath": "static/icon/order-chnn.png"
+			},
+			{
+				"pagePath": "pages/mine/mine",
+				"text": "我的",
+				"iconPath": "static/icon/my.png",
+				"selectedIconPath": "static/icon/my-chnn.png"
+			}
+		]
+	}
+}
