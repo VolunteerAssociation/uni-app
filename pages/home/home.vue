@@ -1,38 +1,52 @@
+<!--
+ * @Author: chenguihui
+ * @Date: 2023-02-13 14:27:46
+ * @LastEditors: chenguihui
+ * @LastEditTime: 2023-03-24 15:35:05
+ * @Description: 首页模块
+ * @filePath: Do not edit
+-->
 <template>
 	<view class="Home">
-		<view class="text">
-			<RightContent />
+		<view class="home-page-header">
+			<view class="search" v-bind="navToSearchPage">
+				<t-search t-class-input="t-search__input" t-class-input-container="t-search__input-container"
+					placeholder="iphone 13 火热发售中" leftIcon="" disabled>
+					<t-icon slot="left-icon" prefix="wr" name="search" size="40rpx" color="#bbb" />
+				</t-search>
+			</view>
+			<view class="swiper-wrap"></view>
 		</view>
+		<view class="home-container"></view>
 	</view>
 </template>
 
 <script>
-	import {
-		carousel
-	} from "@/api/home/index.js";
-	import RightContent from "@/components/RightContent/RightContent.vue"
-	export default {
-		comments: {
-			RightContent
-		},
-		data() {
-			return {
-				title: "Home"
-			}
-		},
-		onLoad() {
-			this.getUser();
-		},
-		methods: {
-			async getUser() {
-				let result = await carousel({});
-				console.log(result);
-			}
+import {
+	carousel
+} from "@/api/home";
+import RightContent from "@/components/RightContent/RightContent"
+export default {
+	comments: {
+		RightContent
+	},
+	data() {
+		return {
+			title: "Home"
 		}
-
+	},
+	onLoad() {
+	},
+	methods: {
+		async getUser() {
+			let result = await carousel({});
+			console.log(result);
+		}
 	}
+
+}
 </script>
 
 <style lang="less">
-	@import url("./home.less");
+@import url("./home.less");
 </style>

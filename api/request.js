@@ -1,3 +1,11 @@
+/*
+ * @Author: chenguihui
+ * @Date: 2023-02-13 15:21:09
+ * @LastEditors: chenguihui
+ * @LastEditTime: 2023-03-24 14:52:14
+ * @Description: 
+ * @filePath: Do not edit
+ */
 /** 导入基础请求地址 */
 import baseUrl from "./BASE_URL";
 export default (option) => {
@@ -53,11 +61,11 @@ export default (option) => {
 					} = result.data;
 					console.log("status===>", status, message);
 					if (status === 14003) {
-						uni.reLaunch({
+						uni.redirectTo({
 							url: "/pages/login/login",
 						});
 					} else if (status === 403) {
-						uni.reLaunch({
+						uni.redirectTo({
 							url: "/pages/login/login",
 						});
 					}

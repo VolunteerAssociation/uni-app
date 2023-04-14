@@ -1,3 +1,11 @@
+/*
+ * @Author: chenguihui
+ * @Date: 2023-02-13 10:12:28
+ * @LastEditors: chenguihui
+ * @LastEditTime: 2023-03-24 15:13:47
+ * @Description: 
+ * @filePath: Do not edit
+ */
 import App from './App'
 
 // #ifndef VUE3
@@ -14,10 +22,13 @@ app.$mount()
 import {
 	createSSRApp
 } from 'vue'
+import * as Pinia from 'pinia'
 export function createApp() {
 	const app = createSSRApp(App)
+	app.use(Pinia.createPinia())
 	return {
-		app
+		app,
+		Pinia
 	}
 }
 // #endif

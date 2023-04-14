@@ -1,3 +1,11 @@
+<!--
+ * @Author: chenguihui
+ * @Date: 2023-02-13 10:12:28
+ * @LastEditors: chenguihui
+ * @LastEditTime: 2023-03-24 14:54:50
+ * @Description: app主入口
+ * @filePath: Do not edit
+-->
 <script>
 	export default {
 		onLaunch: function() {

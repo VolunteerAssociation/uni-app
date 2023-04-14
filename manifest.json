@@ -38,7 +38,9 @@
                     "<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>",
                     "<uses-feature android:name=\"android.hardware.camera\"/>",
                     "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>"
-                ]
+                ],
+                "abiFilters" : [ "armeabi-v7a", "arm64-v8a" ],
+                "minSdkVersion" : 21
             },
             /* ios打包配置 */
             "ios" : {
@@ -78,6 +80,16 @@
     "h5" : {
         "devServer" : {
             "port" : 8000
+        },
+        "title" : "uni-app",
+        "sdkConfigs" : {
+            "maps" : {
+                "amap" : {
+                    "key" : "c812e9f58dd695cfcb1a3740f29ee2b0",
+                    "securityJsCode" : "29fa9b69885bc754f5a9a90322234cef",
+                    "serviceHost" : ""
+                }
+            }
         }
     }
 }
