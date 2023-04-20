@@ -8,7 +8,10 @@
 -->
 <template>
   <view class="Mine">
-    {{ title }}
+    <view class="">
+      
+    </view>
+    <view class=""></view>
   </view>
 </template>
 <script>
