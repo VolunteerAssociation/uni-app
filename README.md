@@ -1,38 +1,68 @@
-# uni-app
+# uni-app 商城购物App
+- 商城购物网站
 
-#### 介绍
-{**以下是 Gitee 平台说明，您可以替换此简介**
-Gitee 是 OSCHINA 推出的基于 Git 的代码托管平台（同时支持 SVN）。专为开发者提供稳定、高效、安全的云端软件开发协作平台
-无论是个人、团队、或是企业，都能够用 Gitee 实现代码托管、项目管理、协作开发。企业项目请看 [https://gitee.com/enterprises](https://gitee.com/enterprises)}
+## 软件架构
+- 软件架构说明，通过uni-app框架vue3塔建的项目结构
 
-#### 软件架构
-软件架构说明，通过uni-app框架vue3塔建的项目结构
+## 项目依赖
+- HBuilderX(v3.7.11以上)
+  - 插件依赖
+  - uni-app（Vue3）编译
+  - less
+  - sass
+  - uni_modules
+- uni-ui(v1.4.27以上)
 
+## 目录结构
+```
+├─.hbuilderx
+├─api                                   // 请求接口
+  ├─home
+  ├─login
+  ├─mine
+  ├─order
+  ├─BASE_URL.js
+  └─request.js
+├─components                            // 组件
+  ├─HeaderDropdown
+  └─RightContent
+├─page                                  // 目录
+  ├─home
+  ├─login
+  ├─mine
+  ├─order
+  └─register
+├─static                                // 静态资源
+├─stores                                // 状态管理
+  └─counter.js
+├─uni-modules
+├─utils                                 // 工具库
+  └─utils.js
+├─.gitignore
+├─App.vue
+├─index.html
+├─LICENSE
+├─main.js
+├─manifest.json
+├─pages.json
+├─README.md
+└─uni.scss
+```
 
-
-#### 安装教程
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 使用说明
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
+## 参与贡献
 1.  Fork 本仓库
 2.  新建 Feat_xxx 分支
 3.  提交代码
 4.  新建 Pull Request
 
+## 作者信息
+1. 作者：陈桂辉(chenguihui)
+2. 邮箱：shaft.feather@foxmail.com
+3. 微信：ed2404296720
 
-#### 特技
+### 赞助作者
+* 打赏就duck不必啦～ 就点点🌟 Star 🌟 关注更新，支持下作者就可以了
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+## License
+
+Nest is [MIT licensed](LICENSE).
